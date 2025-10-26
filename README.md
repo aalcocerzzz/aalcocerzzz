@@ -161,6 +161,8 @@ const alexander = {
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/kennsh0)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF6B6B?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tu-portfolio.com)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/eqdHEZEC)
+[![Instagram](https://img.shields.io/badge/Instagram-5865F2?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kensho.lmao/)
+
 
 </div>
 
