@@ -1,120 +1,180 @@
-👾 Welcome to my Gaming Zone
 <div align="center">
-<!-- Resident Evil Logo SVG -->
-<svg width="400" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <defs>
-    <linearGradient id="bloodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4B0000;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <!-- Umbrella Corporation Background -->
-  <rect width="400" height="150" fill="#0a0a0a"/>
-  <!-- Biohazard Symbol -->
-  <g transform="translate(200, 75)">
-    <circle cx="0" cy="0" r="40" fill="none" stroke="#DC143C" stroke-width="3" opacity="0.3"/>
-    <circle cx="0" cy="0" r="15" fill="#DC143C" filter="url(#glow)"/>
-    <path d="M 0,-40 L -8,-20 L 8,-20 Z" fill="#DC143C" filter="url(#glow)"/>
-    <path d="M 34.64,20 L 24,30 L 28,14.64 Z" fill="#DC143C" filter="url(#glow)"/>
-    <path d="M -34.64,20 L -28,14.64 L -24,30 Z" fill="#DC143C" filter="url(#glow)"/>
-<!-- Center circles -->
-<circle cx="0" cy="-25" r="5" fill="#0a0a0a"/>
-<circle cx="21.65" cy="12.5" r="5" fill="#0a0a0a"/>
-<circle cx="-21.65" cy="12.5" r="5" fill="#0a0a0a"/>
-  </g>
-  <!-- Resident Evil Text -->
-<text x="200" y="130" font-family="'Courier New', monospace" font-size="24" font-weight="bold" 
-     fill="#DC143C" text-anchor="middle" filter="url(#glow)">
-RESIDENT EVIL
-</text>
-  <!-- Scanlines effect -->
-  <rect width="400" height="2" y="20" fill="#00ff00" opacity="0.1">
-    <animate attributeName="y" from="-2" to="150" dur="3s" repeatCount="indefinite"/>
-  </rect>
-</svg>
-<!-- Typing Animation -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=DC143C&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Alexander+%F0%9F%91%BE;Full+Stack+Developer+%F0%9F%92%BB;Gamer+%26+Code+Warrior+%F0%9F%8E%AE;Surviving+Bugs+Like+Zombies+%F0%9F%A7%9F" alt="Typing SVG" />
-</div>
+
+# 👾 Welcome to my Gaming Zone
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=RESIDENT%20EVIL&fontSize=50&fontColor=DC143C&animation=twinkling&fontAlignY=35&desc=☣️%20BIOHAZARD%20ZONE%20☣️&descAlignY=55&descSize=20"/>
+
 </div>
 
-🎮 About Me
-javascriptconst alexander = {
-    role: "Full Stack Developer",
+<div align="center">
+  
+<!-- Typing Animation -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2500&pause=1000&color=DC143C&center=true&vCenter=true&width=600&height=100&lines=Hi%2C+I'm+Alexander+%F0%9F%91%BE;Full+Stack+Developer+%F0%9F%92%BB;Gamer+%26+Code+Warrior+%F0%9F%8E%AE;Surviving+Bugs+Like+Zombies+%F0%9F%A7%9F;Let's+Code+Something+Epic!+%F0%9F%94%A5" alt="Typing SVG" />
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 🎮 About Me
+
+```javascript
+const alexander = {
+    role: "Full Stack Developer 💻",
+    location: "Survival Mode 🧟",
     code: ["JavaScript", "TypeScript", "Python", "Java", "C#"],
     gaming: {
-        favoriteGames: ["Resident Evil", "Silent Hill", "Dead Space"],
-        currentlyPlaying: "Survival Horror Mode: Debugging 🐛",
-        skillLevel: "Professional Bug Hunter"
+        favoriteGames: ["Resident Evil 🧟", "Silent Hill 👻", "Dead Space 🚀"],
+        currentlyPlaying: "Debugging Level: NIGHTMARE 🐛",
+        skillLevel: "Legendary Bug Hunter 🎯"
     },
     askMeAbout: ["Web Dev", "Game Dev", "Horror Games", "Clean Code"],
     technologies: {
         frontEnd: {
-            js: ["React", "Next.js", "Vue", "Angular"],
-            css: ["Tailwind", "Sass", "Styled-Components"]
+            js: ["React ⚛️", "Next.js ▲", "Vue 💚", "Angular 🅰️"],
+            css: ["Tailwind 💨", "Sass 🎨", "Styled-Components 💅"]
         },
         backEnd: {
-            js: ["Node.js", "Express", "NestJS"],
-            python: ["Django", "FastAPI"],
-            java: ["Spring Boot"]
+            js: ["Node.js 🟢", "Express 🚂", "NestJS 🦅"],
+            python: ["Django 🎸", "FastAPI ⚡"],
+            java: ["Spring Boot 🍃"]
         },
-        databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
-        devOps: ["Docker", "AWS", "CI/CD", "Kubernetes"],
-        tools: ["Git", "VS Code", "Postman", "Figma"]
+        databases: ["MongoDB 🍃", "PostgreSQL 🐘", "MySQL 🐬", "Redis 🔴"],
+        devOps: ["Docker 🐳", "AWS ☁️", "CI/CD 🔄", "Kubernetes ☸️"],
+        tools: ["Git 📊", "VS Code 💙", "Postman 📮", "Figma 🎨"]
     },
     currentFocus: "Building scary good applications 👻",
-    funFact: "I debug code like I play Resident Evil: methodically and with limited resources"
+    funFact: "I debug code like I play Resident Evil: carefully and with limited saves 💾"
 };
-🧟 Survival Stats
-<div align="center">
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-</div>
-🎯 Skills Arsenal
-<div align="center">
-Frontend Weapons
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-Backend Arsenal
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-Power-Ups
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-</div>
-🏆 Achievements Unlocked
+```
 
-🎮 Code Survivor: Successfully debugged production on a Friday night
-👾 Full Stack Warrior: Mastered both frontend and backend realms
-🧟 Bug Slayer: Eliminated 1000+ bugs and counting
-🎯 Clean Coder: Writes code that doesn't need comments to understand
-🔥 Performance Hunter: Optimized apps to load faster than a speedrun
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%">
 
-📡 Multiplayer Connect
+## 🧟 Survival Stats
+
 <div align="center">
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
-Mostrar imagen
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=DC143C&icon_color=DC143C&text_color=C9D1D9&ring_color=DC143C" alt="GitHub Stats"/>
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=TU_USUARIO&theme=radical&hide_border=true&background=0D1117&ring=DC143C&fire=DC143C&currStreakLabel=DC143C" alt="GitHub Streak"/>
 </div>
 
 <div align="center">
-💀 "In code we trust, in bugs we debug" 💀
-Mostrar imagen
-⭐️ From Alexander with 💻 and 🎮
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=C9D1D9&langs_count=8" alt="Top Languages"/>
+  <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=TU_USUARIO&theme=redical&hide_border=true&bg_color=0D1117&color=DC143C&line=DC143C&point=FFFFFF" alt="Contribution Graph"/>
 </div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 🎯 Skills Arsenal
+
+<div align="center">
+
+### ⚔️ Frontend Weapons
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vue](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)](https://vuejs.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+### 🛡️ Backend Arsenal
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+[![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/)
+
+### 💾 Database Power-Ups
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
+[![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+
+### 🚀 DevOps & Tools
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 🏆 Achievements Unlocked
+
+<div align="center">
+
+| Achievement | Description | Status |
+|:---:|:---:|:---:|
+| 🎮 **Code Survivor** | Debugged production on Friday night | ✅ UNLOCKED |
+| 👾 **Full Stack Warrior** | Mastered frontend & backend | ✅ UNLOCKED |
+| 🧟 **Bug Slayer** | Eliminated 1000+ bugs | ✅ UNLOCKED |
+| 🎯 **Clean Coder** | Self-documenting code master | ✅ UNLOCKED |
+| 🔥 **Performance Hunter** | Optimized apps to speedrun levels | ✅ UNLOCKED |
+| 💀 **Nightmare Mode** | Shipped features under pressure | ✅ UNLOCKED |
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 🎮 Gaming Stats
+
+<div align="center">
+
+```
+🎯 Favorite Genre: Survival Horror
+🧟 Main Game: Resident Evil Series
+👻 Side Quest: Silent Hill Franchise  
+🚀 Currently Playing: Dead Space Remake
+💾 Saves Used: Minimal (Hardcore Mode)
+🏆 Trophies: Platinum Hunter
+```
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 📡 Multiplayer Connect
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-usuario)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tu-usuario)
+[![Portfolio](https://img.shields.io/badge/Portfolio-DC143C?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tu-portfolio.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu-email@gmail.com)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/tu-usuario)
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 📊 Coding Activity
+
+<div align="center">
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+</div>
+
+---
+
+<div align="center">
+
+### 💀 *"In code we trust, in bugs we debug"* 💀
+
+### ☣️ *"Every bug fixed is a zombie slain"* ☣️
+
+<img src="https://komarev.com/ghpvc/?username=TU_USUARIO&label=Profile%20Views&color=DC143C&style=for-the-badge" alt="Profile Views" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
+
+⭐️ **From [Alexander](https://github.com/TU_USUARIO) | Coded with 💻 Gaming with 🎮**
+
+*"The only way to survive is to keep coding"* 🧟‍♂️
