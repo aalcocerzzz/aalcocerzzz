@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👾 Welcome to my Gaming Zone
+# 👾 Bienvenido a mi Perfil
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=RESIDENT%20EVIL&fontSize=50&fontColor=DC143C&animation=twinkling&fontAlignY=35&desc=☣️%20BIOHAZARD%20ZONE%20☣️&descAlignY=55&descSize=20"/>
 
@@ -144,11 +144,9 @@ const alexander = {
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-usuario)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tu-usuario)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/kennsh0)
 [![Portfolio](https://img.shields.io/badge/Portfolio-DC143C?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tu-portfolio.com)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu-email@gmail.com)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/tu-usuario)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/eqdHEZEC)
 
 </div>
 
@@ -167,14 +165,14 @@ const alexander = {
 
 <div align="center">
 
-### 💀 *"In code we trust, in bugs we debug"* 💀
+### 💀 *"yo nunca pierdo, solamente aprendo y vuelvo a intentarlo"* 💀
 
-### ☣️ *"Every bug fixed is a zombie slain"* ☣️
+### :❤️ *"en una relacion"* ❤️
 
 <img src="https://komarev.com/ghpvc/?username=TU_USUARIO&label=Profile%20Views&color=DC143C&style=for-the-badge" alt="Profile Views" />
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer"/>
 
-⭐️ **From [Alexander](https://github.com/TU_USUARIO) | Coded with 💻 Gaming with 🎮**
+⭐️ **From [Alexander](https://github.com/aalcocerzzz) | Coded with 💻 Gaming with 🎮**
 
 *"The only way to survive is to keep coding"* 🧟‍♂️
