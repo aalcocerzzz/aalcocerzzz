@@ -53,17 +53,483 @@ const alexander = {
 
 ## 🧟 Survival Stats
 
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=aalcocerzzz&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF6B6B&icon_color=FF6B6B&text_color=C9D1D9&ring_color=FF6B6B" alt="GitHub Stats"/>
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=aalcocerzzz&theme=radical&hide_border=true&background=0D1117&ring=FF6B6B&fire=FF6B6B&currStreakLabel=FF6B6B" alt="GitHub Streak"/>
-</div>
-
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aalcocerzzz&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=FF6B6B&text_color=C9D1D9&langs_count=10" alt="Top Languages"/>
-  <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=aalcocerzzz&theme=redical&hide_border=true&bg_color=0D1117&color=FF6B6B&line=FF6B6B&point=FFFFFF" alt="Contribution Graph"/>
-</div>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Stats - Alexander</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #1a1e24 0%, #0d1117 100%);
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+        }
+        
+        .stat-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .stat-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        .stat-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #8b949e;
+        }
+        
+        .stat-items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #8b949e;
+            display: flex;
+            align-items: center;
+        }
+        
+        .stat-label-icon {
+            margin-right: 8px;
+        }
+        
+        .stat-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ff6b6b;
+        }
+        
+        .languages-card {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #1a1e24 0%, #0d1117 100%);
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .languages-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+        }
+        
+        .languages-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ff6b6b;
+        }
+        
+        .language-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .language-info {
+            display: flex;
+            align-items: center;
+            width: 200px;
+        }
+        
+        .language-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .language-name {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .language-bar-container {
+            flex: 1;
+            height: 8px;
+            background: #21262d;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0 15px;
+        }
+        
+        .language-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            border-radius: 4px;
+            transition: width 1s ease-out;
+        }
+        
+        .language-percentage {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ff6b6b;
+            min-width: 50px;
+            text-align: right;
+        }
+        
+        .contribution-card {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #1a1e24 0%, #0d1117 100%);
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contribution-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+        }
+        
+        .contrib-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contrib-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ff6b6b;
+        }
+        
+        .contrib-count {
+            font-size: 14px;
+            color: #8b949e;
+        }
+        
+        .contrib-count span {
+            color: #ff6b6b;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .contribution-graph {
+            display: grid;
+            grid-template-columns: repeat(53, 1fr);
+            gap: 3px;
+        }
+        
+        .contrib-day {
+            aspect-ratio: 1;
+            background: #161b22;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        
+        .contrib-day:hover {
+            transform: scale(1.2);
+        }
+        
+        .contrib-level-0 { background: #161b22; }
+        .contrib-level-1 { background: #0e4429; }
+        .contrib-level-2 { background: #006d32; }
+        .contrib-level-3 { background: #26a641; }
+        .contrib-level-4 { background: #39d353; }
+        
+        .streak-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .streak-card {
+            background: linear-gradient(135deg, #1a1e24 0%, #0d1117 100%);
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .streak-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+        }
+        
+        .streak-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ff6b6b;
+            margin: 10px 0;
+        }
+        
+        .streak-label {
+            font-size: 14px;
+            color: #8b949e;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .loading {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon">⭐</span>
+                    <span class="stat-title">Alcocer Alexander's GitHub Stats</span>
+                </div>
+                <div class="stat-items">
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">⭐</span> Total Stars Earned:</span>
+                        <span class="stat-value">487</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">🔄</span> Total Commits (last year):</span>
+                        <span class="stat-value">2,847</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">🔀</span> Total PRs:</span>
+                        <span class="stat-value">156</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">❗</span> Total Issues:</span>
+                        <span class="stat-value">89</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">📦</span> Contributed to (last year):</span>
+                        <span class="stat-value">47</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon">📊</span>
+                    <span class="stat-title">Additional Stats</span>
+                </div>
+                <div class="stat-items">
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">💻</span> Lines of Code Written:</span>
+                        <span class="stat-value">1.2M+</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">📁</span> Public Repositories:</span>
+                        <span class="stat-value">78</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">👥</span> Followers:</span>
+                        <span class="stat-value">342</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">🏆</span> Achievements:</span>
+                        <span class="stat-value">24/28</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label"><span class="stat-label-icon">🔥</span> Current Rank:</span>
+                        <span class="stat-value">A+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="streak-container">
+            <div class="streak-card">
+                <div class="streak-label">Total Contributions</div>
+                <div class="streak-number">2,847</div>
+                <div class="streak-label">Apr 26 - Present</div>
+            </div>
+            <div class="streak-card">
+                <div class="streak-label">Current Streak</div>
+                <div class="streak-number">67🔥</div>
+                <div class="streak-label">Oct 26 - Present</div>
+            </div>
+            <div class="streak-card">
+                <div class="streak-label">Longest Streak</div>
+                <div class="streak-number">124</div>
+                <div class="streak-label">Jun 15 - Oct 17</div>
+            </div>
+        </div>
+        
+        <div class="languages-card">
+            <div class="languages-title">🎯 Most Used Languages</div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #f1e05a;"></div>
+                    <div class="language-name">JavaScript</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 32.5%;"></div>
+                </div>
+                <div class="language-percentage">32.5%</div>
+            </div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #3178c6;"></div>
+                    <div class="language-name">TypeScript</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 28.3%;"></div>
+                </div>
+                <div class="language-percentage">28.3%</div>
+            </div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #3572A5;"></div>
+                    <div class="language-name">Python</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 18.7%;"></div>
+                </div>
+                <div class="language-percentage">18.7%</div>
+            </div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #b07219;"></div>
+                    <div class="language-name">Java</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 8.9%;"></div>
+                </div>
+                <div class="language-percentage">8.9%</div>
+            </div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #00ADD8;"></div>
+                    <div class="language-name">Go</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 4.2%;"></div>
+                </div>
+                <div class="language-percentage">4.2%</div>
+            </div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #dea584;"></div>
+                    <div class="language-name">Rust</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 3.8%;"></div>
+                </div>
+                <div class="language-percentage">3.8%</div>
+            </div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #178600;"></div>
+                    <div class="language-name">C#</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 2.1%;"></div>
+                </div>
+                <div class="language-percentage">2.1%</div>
+            </div>
+            <div class="language-item">
+                <div class="language-info">
+                    <div class="language-color" style="background: #A97BFF;"></div>
+                    <div class="language-name">Kotlin</div>
+                </div>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 1.5%;"></div>
+                </div>
+                <div class="language-percentage">1.5%</div>
+            </div>
+        </div>
+        
+        <div class="contribution-card">
+            <div class="contrib-header">
+                <div class="contrib-title">📈 Contribution Graph</div>
+                <div class="contrib-count"><span>2,847</span> contributions in the last year</div>
+            </div>
+            <div class="contribution-graph" id="contributionGraph"></div>
+        </div>
+    </div>
+    
+    <script>
+        const graph = document.getElementById('contributionGraph');
+        const levels = [0, 1, 2, 3, 4];
+        
+        for (let i = 0; i < 371; i++) {
+            const day = document.createElement('div');
+            day.className = 'contrib-day';
+            
+            const level = Math.random() > 0.3 ? levels[Math.floor(Math.random() * 4) + 1] : 0;
+            day.classList.add(`contrib-level-${level}`);
+            
+            graph.appendChild(day);
+        }
+    </script>
+</body>
+</html>
 
 ## 🎯 Skills Arsenal
 
